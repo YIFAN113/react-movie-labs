@@ -50,7 +50,6 @@ describe("Navigation", () => {
   });
   describe("From the favourites page to a movie's details", () => {
     beforeEach(() => {
-        // Select two favourites and navigate to Favourites page
         cy.get("button[aria-label='add to favorites']").eq(0).click();
         cy.get("button").contains("Favorites").click();
     });

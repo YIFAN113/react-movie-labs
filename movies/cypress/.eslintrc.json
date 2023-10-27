@@ -1,3 +1,9 @@
+/*
+Because cy is not defined after executing install react-scripts,
+I found this solution on
+https://stackoverflow.com/questions/58982852/eslint-cy-is-not-defined-cypress,
+although I don't know the cause of error specific.
+*/
 {
     "extends": [
       "plugin:cypress/recommended"
