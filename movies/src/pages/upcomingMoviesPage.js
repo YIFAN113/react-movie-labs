@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { getUpcomingMovie } from "../api/tmdb-api";
 import PageTemplate from '../components/templateMovieListPage'
 import AddToFavorites from "../components/cardIcons/addToFavorites";
-
+import AddToPlaylist from "../components/cardIcons/addToWatchList";
 const UpcomingMoviePage = (props) => {
   const [movies, setMovies] = useState([]);
   const favorites = movies.filter(m => m.favorite)
@@ -29,7 +29,7 @@ const UpcomingMoviePage = (props) => {
             return (
                 <>
                     <AddToFavorites movie={movie}/>
-                    
+                    <AddToPlaylist movie={movie}/>
                 </>
             );
         }}
